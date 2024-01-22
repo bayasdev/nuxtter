@@ -4,7 +4,7 @@
   >
     <UButton
       to="/"
-      icon="i-fe-magic"
+      icon="i-fe-commenting"
       variant="ghost"
       color="black"
       :padded="false"
