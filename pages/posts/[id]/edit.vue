@@ -13,9 +13,7 @@ const router = useRouter();
 
 const { id } = useRoute().params;
 
-const { data: post } = await useFetch(`/api/posts/${id}`, {
-  key: `post-${id}`,
-});
+const { data: post } = await useFetch(`/api/posts/${id}`);
 
 const state = reactive({
   title: post.value?.post?.title,
@@ -50,8 +48,6 @@ async function onSubmit(event: FormSubmitEvent<PostValidatorType>) {
       description: 'El post se ha editado correctamente',
       color: 'green',
     });
-    refreshNuxtData('posts');
-    refreshNuxtData(`post-${id}`);
     router.push('/');
   }
 }
