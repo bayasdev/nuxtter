@@ -1,7 +1,7 @@
 <template>
-  <footer
-    class="flex p-4 justify-between items-center flex-wrap border-t text-xs text-gray-600 dark:text-gray-400 dark:border-primary-900/50"
-  >
-    &copy; {{ new Date().getFullYear() }} Nuxtter Inc.
+  <footer class="flex py-4 px-4 lg:px-12 border-t dark:border-primary-900/50">
+    <span class="text-xs text-gray-600 dark:text-gray-400">
+      &copy; {{ new Date().getFullYear() }} Nuxtter Inc.
+    </span>
   </footer>
 </template>

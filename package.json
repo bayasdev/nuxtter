@@ -19,6 +19,8 @@
   "dependencies": {
     "@iconify-json/fe": "^1.1.10",
     "@nuxt/ui": "^2.12.3",
-    "@prisma/client": "^5.8.1"
+    "@prisma/client": "^5.8.1",
+    "dayjs": "^1.11.10",
+    "zod": "^3.22.4"
   }
 }
