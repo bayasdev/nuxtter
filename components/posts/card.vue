@@ -11,13 +11,11 @@ const props = defineProps<{
 const toast = useToast();
 
 const handleDeletePost = async () => {
-  console.log(props.id);
   const { error } = await useFetch(`/api/posts/${props.id}`, {
     method: 'DELETE',
   });
 
   if (error.value) {
-    console.log(error);
     toast.add({
       title: 'Error',
       description: 'Algo salió mal',

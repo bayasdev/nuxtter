@@ -30,7 +30,6 @@ async function onSubmit(event: FormSubmitEvent<PostValidatorType>) {
 
   if (error.value) {
     if (error.value.statusCode === 422) {
-      console.log(error.value.data?.issues);
       error.value.data?.issues?.forEach((issue: z.ZodIssue) => {
         toast.add({
           title: 'Error',
